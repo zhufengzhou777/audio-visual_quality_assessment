@@ -8,14 +8,10 @@ https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/j
 ````
 python feature_extractor/feature_extractor.py --input (path) --output (path)
 ````
-## 2.get the train list and the test list
-````
-python getlist.py 
-````
-## 3.train the AVQA model
+## 2.train the AVQA model
 ````
 python train.py --epoch (epoch) --learning_rate (learning_rate) --batch_size (batch_size)
 ````
-## 4.get result
+## result
 obtain trainlog in ./log/avqa.log\
 obtain plot in ./log/avqa.png
