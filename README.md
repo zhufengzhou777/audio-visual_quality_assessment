@@ -1,7 +1,6 @@
 # audio-visual quality assessment
 ## 1.obtain features extracted by ViT
-get the pretrained ViT model by rwightman\,save them at ./pretrained_models
-link:\
+get the pretrained ViT model by rwightman\,save them at ./pretrained_models.link:\
 https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_patch16_224_in21k-e5005f0a.pth
 https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_patch16_224_in21k-606da67d.pth
 ````
