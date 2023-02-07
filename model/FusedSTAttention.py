@@ -50,9 +50,3 @@ class FusedSTBlock(nn.Module):
         x = x + self.drop_path(self.attn(self.norm1(x)))
         x = x + self.drop_path(self.mlp(self.norm2(x)))
         return x
-
-
-if __name__ == "__main__":
-    aa = FusedSTBlock()
-    data = torch.randn([3, 2, 196, 768])
-    print(aa.forward(data).shape)
