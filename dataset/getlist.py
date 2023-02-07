@@ -10,31 +10,31 @@ test_list = list(set(namelist).difference(set(train_list)))
 
 
 def gettrainlist():
-    with open('../datalist/train.txt', 'w') as f:
+    with open('../datalist/train.txt', 'w') as f1:
         final_train_list = []
         for tl in train_list:
-            with open('../datalist/train/{}.txt'.format(tl)) as ff:
-                fff = ff.readlines()
-                for ffff in fff:
-                    final_train_list.append(ffff)
+            with open('../datalist/train/{}.txt'.format(tl)) as f2:
+                f_lines = f2.readlines()
+                for fl in f_lines:
+                    final_train_list.append(fl)
         last = final_train_list[-1]
         final_train_list.pop()
         final_train_list.append(last[:-2])
-        f.writelines(final_train_list)
+        f1.writelines(final_train_list)
 
 
 def gettestlist():
-    with open('../datalist/test.txt', 'w') as f:
+    with open('../datalist/test.txt', 'w') as f1:
         final_test_list = []
         for tl in test_list:
-            with open('../datalist/train/{}.txt'.format(tl)) as ff:
-                fff = ff.readlines()
-                for ffff in fff:
-                    final_test_list.append(ffff)
+            with open('../datalist/train/{}.txt'.format(tl)) as f2:
+                f_lines = f2.readlines()
+                for fl in f_lines:
+                    final_test_list.append(fl)
         last = final_test_list[-1]
         final_test_list.pop()
         final_test_list.append(last[:-2])
-        f.writelines(final_test_list)
+        f1.writelines(final_test_list)
 
 
 if __name__ == "__main__":
