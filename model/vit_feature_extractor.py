@@ -239,12 +239,3 @@ def vit_feature_extractor(input, model_size='base'):
         v.requires_grad = False
     output = vit.forward(input)
     return output
-
-
-# -----------------------test----------------------------
-
-
-if __name__ == "__main__":
-    input = torch.randn([192, 3, 224, 224])
-    output = vit_feature_extractor(input)
-    print(output.shape)
