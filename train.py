@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(filename)s %(level
 parser = argparse.ArgumentParser()
 parser.add_argument('--epochs', type=int, default=600)
 parser.add_argument('--learning_rate', type=float, default=1e-3)
-parser.add_argument('--batch_size',type=int, default=4)
+parser.add_argument('--batch_size',type=int, default=16)
 parser.add_argument('--data_path',type=str, default='./data')
 args = parser.parse_args()
 
