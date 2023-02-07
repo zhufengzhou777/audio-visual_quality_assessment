@@ -72,11 +72,3 @@ class AVQA(nn.Module):
         feature = X_att.flatten(1)
         score = self.score(feature)
         return score
-
-
-if __name__ == "__main__":
-    avqa = AVQA()
-    fit1 = torch.randn([2, 12, 197, 768])
-    fit2 = torch.randn([2, 12, 197, 768])
-    result = avqa.forward(fit1, fit2)
-    print(result.shape)
