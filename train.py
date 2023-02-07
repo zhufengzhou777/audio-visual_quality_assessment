@@ -10,7 +10,7 @@ from model.AVQA import AVQA
 from torch.optim import lr_scheduler
 
 # ------------settings------------
-seed = 2
+seed = 42
 torch.manual_seed(seed)
 np.random.seed(seed)
 random.seed(seed)
