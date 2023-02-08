@@ -6,7 +6,7 @@ from model.vit_feature_extractor import MLP
 
 
 class AVQA(nn.Module):
-    def __init__(self, dim=768, fusion_dim=512, length=24):
+    def __init__(self, dim=768, fusion_dim=128, length=24):
         super().__init__()
         self.attn_layer1 = FusedSTBlock(dim=dim, num_heads=8)
         self.attn_layer2 = FusedSTBlock(dim=dim, num_heads=8)
