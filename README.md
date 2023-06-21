@@ -1,4 +1,5 @@
 # Audio-visual quality assessment
+The data set used in the experiment is LIVE-SJTU
 ## 1.Obtain the features extracted by Vision Transformer
 get the pretrained ViT model by rwightman\,save them at ./pretrained_models.link:\
 https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_patch16_224_in21k-e5005f0a.pth \
